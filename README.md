@@ -113,7 +113,7 @@ llama-cli -m outputs/gguf/gemma-4-12B-it-heretic-Q8_0.gguf --reasoning off -ngl 
 
 The MLX, GGUF, and Ollama builds are text-only; the BF16 safetensors keep the vision/audio towers.
 
-## Apple Silicon gotchas
+## Apple Silicon Usage
 
 - **MPS `linalg.qr` is pathologically slow** on tall matrices in torch 2.14.1 (a 3840×10 QR takes > 60 s).
   Heretic's default `row_normalization = "full"` calls `torch.svd_lowrank` for every abliterated module,
