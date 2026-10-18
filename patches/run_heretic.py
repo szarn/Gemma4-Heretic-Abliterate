@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
 """Launch Heretic with the MPS svd_lowrank patch applied.
 
 Use exactly like the `heretic` command (same flags; config.toml is read from the CWD):

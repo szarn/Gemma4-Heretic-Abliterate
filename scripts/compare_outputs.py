@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
 """Sanity-check general quality of an abliterated model against the original.
 
 Generation runs one model per process, so only one copy of the weights is ever in memory:

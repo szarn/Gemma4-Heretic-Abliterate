@@ -128,5 +128,8 @@ The MLX, GGUF, and Ollama builds are text-only; the BF16 safetensors keep the vi
 
 ## License
 
-Gemma 4 is Apache-2.0. Heretic is AGPL-3.0, and `patches/run_heretic.py` imports it; license this repo's
-code accordingly before making it public.
+The code in this repository is licensed under the [GNU Affero General Public License v3.0 or later](LICENSE)
+(`AGPL-3.0-or-later`), matching Heretic, which `patches/run_heretic.py` imports.
+
+The model itself is not included. `google/gemma-4-12B-it` and models derived from it are under Gemma 4's
+Apache-2.0 license.

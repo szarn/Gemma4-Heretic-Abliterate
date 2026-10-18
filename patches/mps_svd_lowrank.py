@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
 """Run torch.svd_lowrank on CPU when its input lives on MPS.
 
 Why: with torch 2.14.1 on Apple Silicon, torch.linalg.qr on tall MPS matrices is pathologically
