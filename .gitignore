@@ -1,0 +1,15 @@
+# Environments and third-party checkouts (reinstall from requirements*.txt / README)
+.venv/
+.venv-gguf/
+tools/
+__pycache__/
+.DS_Store
+
+# Model weights (tens of GB; share on Hugging Face Hub instead). Keep the benign eval comparison.
+outputs/*
+!outputs/eval/
+
+# Logs: keep only the optimization record. eval.log and eval_flagged_refusals.json contain the
+# abliterated model's responses to harmful prompts and must not be published.
+logs/*
+!logs/optimize.log

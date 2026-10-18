@@ -1,0 +1,23 @@
+# Heretic settings (read automatically from the current working directory).
+# Optimization settings (trials, KL target/scale, normalization, datasets) are left at defaults.
+
+model = "google/gemma-4-12B-it"
+
+# Apple Silicon: BF16 on MPS, no bitsandbytes quantization.
+dtypes = ["bfloat16"]
+quantization = "none"
+device_map = "mps"
+
+# Gemma 4 sometimes starts answering and refuses partway through ("delayed refusal").
+# Heretic's default of 100 tokens under-counts those, so generate 200.
+max_response_length = 200
+
+# Cap the automatic batch-size search to stay well inside unified memory.
+# Batch 64 reached a 40.6 GB process footprint (MPS recommended max is 37.4 GB on this 48 GB Mac)
+# and starved WindowServer into a watchdog reboot; 32 leaves headroom.
+max_batch_size = 32
+
+# Skip the export-strategy prompt when saving: merge the abliteration LoRA into full weights.
+export_strategy = "merge"
+
+seed = 42

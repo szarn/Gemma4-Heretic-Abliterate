@@ -1,0 +1,15 @@
+# Gemma 4 12B-it, abliterated with Heretic (trial 143), Q8_0 GGUF made with llama.cpp.
+# (Ollama 0.40's safetensors importer only offers MLX quant types, not q8_0.)
+# Build: ollama create gemma4-12b-heretic -f Modelfile
+FROM ./outputs/gguf/gemma-4-12B-it-heretic-Q8_0.gguf
+
+# Same chat handling as the official gemma4 models: Ollama's built-in Gemma 4 renderer/parser
+# formats the conversation, and the template is a passthrough (avoids an auto-converted template).
+TEMPLATE {{ .Prompt }}
+RENDERER gemma4
+PARSER gemma4
+
+# Google's recommended sampling for Gemma 4 (matches the official gemma4 models).
+PARAMETER temperature 1
+PARAMETER top_k 64
+PARAMETER top_p 0.95
