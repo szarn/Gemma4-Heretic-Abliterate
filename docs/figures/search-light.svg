@@ -1,0 +1,457 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 430" width="880" height="430" role="img" aria-labelledby="title desc">
+<title id="title">Heretic's parameter search</title>
+<desc id="desc">Animated scatter of all 200 trials, refusals against KL divergence on a log scale, appearing in order: 60 random trials, then TPE-guided ones. The Pareto front of 14 trials is drawn, and trial 143 (35 refusals, KL 0.0393) is highlighted as the saved model.</desc>
+<style>
+text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:14px;fill:#1f2328}
+.ink2{fill:#59636e}.muted{fill:#818b98}.small{font-size:12px}.b{font-weight:600}
+.end{text-anchor:end}.mid{text-anchor:middle}
+.halo{paint-order:stroke;stroke:#ffffff;stroke-width:4px;stroke-linejoin:round}
+.dot{transform-box:fill-box;transform-origin:center}
+.front{stroke-dasharray:1;stroke-dashoffset:0;animation:front 16.0s infinite ease-in-out}
+@keyframes front{0%{stroke-dashoffset:1}54.4%{stroke-dashoffset:1}64.4%{stroke-dashoffset:0;opacity:1}93.8%{opacity:1}100%{opacity:0;stroke-dashoffset:0}}
+.pick{transform-box:fill-box;transform-origin:center;animation:pick 16.0s infinite ease-out}
+@keyframes pick{0%{opacity:0;transform:scale(2.5)}64.4%{opacity:0;transform:scale(2.5)}67.5%{opacity:1;transform:scale(1)}93.8%{opacity:1;transform:scale(1)}100%{opacity:0;transform:scale(1)}}
+.picklabel{animation:picklabel 16.0s infinite}
+@keyframes picklabel{0%{opacity:0}66.3%{opacity:0}69.4%{opacity:1}93.8%{opacity:1}100%{opacity:0}}
+.ph0{opacity:0;animation:ph0 16.0s infinite step-end}
+@keyframes ph0{0%{opacity:1}17.5%{opacity:0}100%{opacity:0}}
+.ph1{opacity:0;animation:ph1 16.0s infinite step-end}
+@keyframes ph1{0%{opacity:0}17.5%{opacity:1}54.4%{opacity:0}100%{opacity:0}}
+.ph2{opacity:1;animation:ph2 16.0s infinite step-end}
+@keyframes ph2{0%{opacity:0}54.4%{opacity:1}96.9%{opacity:0}100%{opacity:0}}
+@keyframes t1{0%{opacity:0;transform:scale(0)}2.5%{opacity:0;transform:scale(0)}3.4%{opacity:1;transform:scale(1.6)}5%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t2{0%{opacity:0;transform:scale(0)}2.8%{opacity:0;transform:scale(0)}3.7%{opacity:1;transform:scale(1.6)}5.3%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t3{0%{opacity:0;transform:scale(0)}3%{opacity:0;transform:scale(0)}3.9%{opacity:1;transform:scale(1.6)}5.5%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t4{0%{opacity:0;transform:scale(0)}3.2%{opacity:0;transform:scale(0)}4.2%{opacity:1;transform:scale(1.6)}5.8%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t5{0%{opacity:0;transform:scale(0)}3.5%{opacity:0;transform:scale(0)}4.4%{opacity:1;transform:scale(1.6)}6%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t6{0%{opacity:0;transform:scale(0)}3.8%{opacity:0;transform:scale(0)}4.7%{opacity:1;transform:scale(1.6)}6.2%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t7{0%{opacity:0;transform:scale(0)}4%{opacity:0;transform:scale(0)}4.9%{opacity:1;transform:scale(1.6)}6.5%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t8{0%{opacity:0;transform:scale(0)}4.2%{opacity:0;transform:scale(0)}5.2%{opacity:1;transform:scale(1.6)}6.8%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t9{0%{opacity:0;transform:scale(0)}4.5%{opacity:0;transform:scale(0)}5.4%{opacity:1;transform:scale(1.6)}7%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t10{0%{opacity:0;transform:scale(0)}4.8%{opacity:0;transform:scale(0)}5.7%{opacity:1;transform:scale(1.6)}7.3%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t11{0%{opacity:0;transform:scale(0)}5%{opacity:0;transform:scale(0)}5.9%{opacity:1;transform:scale(1.6)}7.5%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t12{0%{opacity:0;transform:scale(0)}5.3%{opacity:0;transform:scale(0)}6.2%{opacity:1;transform:scale(1.6)}7.8%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t13{0%{opacity:0;transform:scale(0)}5.5%{opacity:0;transform:scale(0)}6.4%{opacity:1;transform:scale(1.6)}8%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t14{0%{opacity:0;transform:scale(0)}5.8%{opacity:0;transform:scale(0)}6.7%{opacity:1;transform:scale(1.6)}8.2%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t15{0%{opacity:0;transform:scale(0)}6%{opacity:0;transform:scale(0)}6.9%{opacity:1;transform:scale(1.6)}8.5%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t16{0%{opacity:0;transform:scale(0)}6.2%{opacity:0;transform:scale(0)}7.2%{opacity:1;transform:scale(1.6)}8.8%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t17{0%{opacity:0;transform:scale(0)}6.5%{opacity:0;transform:scale(0)}7.4%{opacity:1;transform:scale(1.6)}9%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t18{0%{opacity:0;transform:scale(0)}6.8%{opacity:0;transform:scale(0)}7.7%{opacity:1;transform:scale(1.6)}9.2%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t19{0%{opacity:0;transform:scale(0)}7%{opacity:0;transform:scale(0)}7.9%{opacity:1;transform:scale(1.6)}9.5%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t20{0%{opacity:0;transform:scale(0)}7.3%{opacity:0;transform:scale(0)}8.2%{opacity:1;transform:scale(1.6)}9.8%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t21{0%{opacity:0;transform:scale(0)}7.5%{opacity:0;transform:scale(0)}8.4%{opacity:1;transform:scale(1.6)}10%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t22{0%{opacity:0;transform:scale(0)}7.8%{opacity:0;transform:scale(0)}8.7%{opacity:1;transform:scale(1.6)}10.2%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t23{0%{opacity:0;transform:scale(0)}8%{opacity:0;transform:scale(0)}8.9%{opacity:1;transform:scale(1.6)}10.5%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t24{0%{opacity:0;transform:scale(0)}8.2%{opacity:0;transform:scale(0)}9.2%{opacity:1;transform:scale(1.6)}10.8%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t25{0%{opacity:0;transform:scale(0);fill:#a0a9b3}8.5%{opacity:0;transform:scale(0)}9.4%{opacity:1;transform:scale(1.6)}11%{transform:scale(1)}54.4%{fill:#a0a9b3}58.1%{fill:#eb6834}93.8%{opacity:1}100%{opacity:0;transform:scale(1);fill:#eb6834}}
+@keyframes t26{0%{opacity:0;transform:scale(0)}8.8%{opacity:0;transform:scale(0)}9.7%{opacity:1;transform:scale(1.6)}11.2%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t27{0%{opacity:0;transform:scale(0)}9%{opacity:0;transform:scale(0)}9.9%{opacity:1;transform:scale(1.6)}11.5%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t28{0%{opacity:0;transform:scale(0)}9.2%{opacity:0;transform:scale(0)}10.2%{opacity:1;transform:scale(1.6)}11.8%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t29{0%{opacity:0;transform:scale(0)}9.5%{opacity:0;transform:scale(0)}10.4%{opacity:1;transform:scale(1.6)}12%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t30{0%{opacity:0;transform:scale(0)}9.8%{opacity:0;transform:scale(0)}10.7%{opacity:1;transform:scale(1.6)}12.2%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t31{0%{opacity:0;transform:scale(0)}10%{opacity:0;transform:scale(0)}10.9%{opacity:1;transform:scale(1.6)}12.5%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t32{0%{opacity:0;transform:scale(0)}10.2%{opacity:0;transform:scale(0)}11.2%{opacity:1;transform:scale(1.6)}12.8%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t33{0%{opacity:0;transform:scale(0)}10.5%{opacity:0;transform:scale(0)}11.4%{opacity:1;transform:scale(1.6)}13%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t34{0%{opacity:0;transform:scale(0)}10.8%{opacity:0;transform:scale(0)}11.7%{opacity:1;transform:scale(1.6)}13.2%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t35{0%{opacity:0;transform:scale(0)}11%{opacity:0;transform:scale(0)}11.9%{opacity:1;transform:scale(1.6)}13.5%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t36{0%{opacity:0;transform:scale(0)}11.3%{opacity:0;transform:scale(0)}12.2%{opacity:1;transform:scale(1.6)}13.8%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t37{0%{opacity:0;transform:scale(0)}11.5%{opacity:0;transform:scale(0)}12.4%{opacity:1;transform:scale(1.6)}14%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t38{0%{opacity:0;transform:scale(0)}11.8%{opacity:0;transform:scale(0)}12.7%{opacity:1;transform:scale(1.6)}14.2%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t39{0%{opacity:0;transform:scale(0)}12%{opacity:0;transform:scale(0)}12.9%{opacity:1;transform:scale(1.6)}14.5%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t40{0%{opacity:0;transform:scale(0)}12.2%{opacity:0;transform:scale(0)}13.2%{opacity:1;transform:scale(1.6)}14.8%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t41{0%{opacity:0;transform:scale(0)}12.5%{opacity:0;transform:scale(0)}13.4%{opacity:1;transform:scale(1.6)}15%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t42{0%{opacity:0;transform:scale(0)}12.8%{opacity:0;transform:scale(0)}13.7%{opacity:1;transform:scale(1.6)}15.2%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t43{0%{opacity:0;transform:scale(0)}13%{opacity:0;transform:scale(0)}13.9%{opacity:1;transform:scale(1.6)}15.5%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t44{0%{opacity:0;transform:scale(0)}13.2%{opacity:0;transform:scale(0)}14.2%{opacity:1;transform:scale(1.6)}15.8%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t45{0%{opacity:0;transform:scale(0)}13.5%{opacity:0;transform:scale(0)}14.4%{opacity:1;transform:scale(1.6)}16%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t46{0%{opacity:0;transform:scale(0)}13.8%{opacity:0;transform:scale(0)}14.7%{opacity:1;transform:scale(1.6)}16.2%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t47{0%{opacity:0;transform:scale(0)}14%{opacity:0;transform:scale(0)}14.9%{opacity:1;transform:scale(1.6)}16.5%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t48{0%{opacity:0;transform:scale(0)}14.3%{opacity:0;transform:scale(0)}15.2%{opacity:1;transform:scale(1.6)}16.8%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t49{0%{opacity:0;transform:scale(0)}14.5%{opacity:0;transform:scale(0)}15.4%{opacity:1;transform:scale(1.6)}17%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t50{0%{opacity:0;transform:scale(0)}14.8%{opacity:0;transform:scale(0)}15.7%{opacity:1;transform:scale(1.6)}17.2%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t51{0%{opacity:0;transform:scale(0)}15%{opacity:0;transform:scale(0)}15.9%{opacity:1;transform:scale(1.6)}17.5%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t52{0%{opacity:0;transform:scale(0)}15.2%{opacity:0;transform:scale(0)}16.2%{opacity:1;transform:scale(1.6)}17.8%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t53{0%{opacity:0;transform:scale(0)}15.5%{opacity:0;transform:scale(0)}16.4%{opacity:1;transform:scale(1.6)}18%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t54{0%{opacity:0;transform:scale(0)}15.8%{opacity:0;transform:scale(0)}16.7%{opacity:1;transform:scale(1.6)}18.2%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t55{0%{opacity:0;transform:scale(0)}16%{opacity:0;transform:scale(0)}16.9%{opacity:1;transform:scale(1.6)}18.5%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t56{0%{opacity:0;transform:scale(0)}16.2%{opacity:0;transform:scale(0)}17.2%{opacity:1;transform:scale(1.6)}18.8%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t57{0%{opacity:0;transform:scale(0)}16.5%{opacity:0;transform:scale(0)}17.4%{opacity:1;transform:scale(1.6)}19%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t58{0%{opacity:0;transform:scale(0)}16.8%{opacity:0;transform:scale(0)}17.7%{opacity:1;transform:scale(1.6)}19.2%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t59{0%{opacity:0;transform:scale(0)}17%{opacity:0;transform:scale(0)}17.9%{opacity:1;transform:scale(1.6)}19.5%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t60{0%{opacity:0;transform:scale(0)}17.2%{opacity:0;transform:scale(0)}18.2%{opacity:1;transform:scale(1.6)}19.7%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t61{0%{opacity:0;transform:scale(0)}17.5%{opacity:0;transform:scale(0)}18.4%{opacity:1;transform:scale(1.6)}20%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t62{0%{opacity:0;transform:scale(0)}17.8%{opacity:0;transform:scale(0)}18.7%{opacity:1;transform:scale(1.6)}20.2%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t63{0%{opacity:0;transform:scale(0)}18%{opacity:0;transform:scale(0)}18.9%{opacity:1;transform:scale(1.6)}20.5%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t64{0%{opacity:0;transform:scale(0)}18.2%{opacity:0;transform:scale(0)}19.2%{opacity:1;transform:scale(1.6)}20.8%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t65{0%{opacity:0;transform:scale(0)}18.5%{opacity:0;transform:scale(0)}19.4%{opacity:1;transform:scale(1.6)}21%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t66{0%{opacity:0;transform:scale(0)}18.8%{opacity:0;transform:scale(0)}19.7%{opacity:1;transform:scale(1.6)}21.2%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t67{0%{opacity:0;transform:scale(0)}19%{opacity:0;transform:scale(0)}19.9%{opacity:1;transform:scale(1.6)}21.5%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t68{0%{opacity:0;transform:scale(0)}19.2%{opacity:0;transform:scale(0)}20.2%{opacity:1;transform:scale(1.6)}21.8%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t69{0%{opacity:0;transform:scale(0)}19.5%{opacity:0;transform:scale(0)}20.4%{opacity:1;transform:scale(1.6)}22%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t70{0%{opacity:0;transform:scale(0)}19.8%{opacity:0;transform:scale(0)}20.7%{opacity:1;transform:scale(1.6)}22.2%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t71{0%{opacity:0;transform:scale(0)}20%{opacity:0;transform:scale(0)}20.9%{opacity:1;transform:scale(1.6)}22.5%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t72{0%{opacity:0;transform:scale(0)}20.2%{opacity:0;transform:scale(0)}21.2%{opacity:1;transform:scale(1.6)}22.7%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t73{0%{opacity:0;transform:scale(0)}20.5%{opacity:0;transform:scale(0)}21.4%{opacity:1;transform:scale(1.6)}23%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t74{0%{opacity:0;transform:scale(0)}20.8%{opacity:0;transform:scale(0)}21.7%{opacity:1;transform:scale(1.6)}23.2%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t75{0%{opacity:0;transform:scale(0)}21%{opacity:0;transform:scale(0)}21.9%{opacity:1;transform:scale(1.6)}23.5%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t76{0%{opacity:0;transform:scale(0)}21.2%{opacity:0;transform:scale(0)}22.2%{opacity:1;transform:scale(1.6)}23.8%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t77{0%{opacity:0;transform:scale(0)}21.5%{opacity:0;transform:scale(0)}22.4%{opacity:1;transform:scale(1.6)}24%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t78{0%{opacity:0;transform:scale(0)}21.8%{opacity:0;transform:scale(0)}22.7%{opacity:1;transform:scale(1.6)}24.2%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t79{0%{opacity:0;transform:scale(0);fill:#2a78d6}22%{opacity:0;transform:scale(0)}22.9%{opacity:1;transform:scale(1.6)}24.5%{transform:scale(1)}54.4%{fill:#2a78d6}58.1%{fill:#eb6834}93.8%{opacity:1}100%{opacity:0;transform:scale(1);fill:#eb6834}}
+@keyframes t80{0%{opacity:0;transform:scale(0)}22.2%{opacity:0;transform:scale(0)}23.2%{opacity:1;transform:scale(1.6)}24.8%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t81{0%{opacity:0;transform:scale(0)}22.5%{opacity:0;transform:scale(0)}23.4%{opacity:1;transform:scale(1.6)}25%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t82{0%{opacity:0;transform:scale(0)}22.8%{opacity:0;transform:scale(0)}23.7%{opacity:1;transform:scale(1.6)}25.2%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t83{0%{opacity:0;transform:scale(0)}23%{opacity:0;transform:scale(0)}23.9%{opacity:1;transform:scale(1.6)}25.5%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t84{0%{opacity:0;transform:scale(0)}23.2%{opacity:0;transform:scale(0)}24.2%{opacity:1;transform:scale(1.6)}25.8%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t85{0%{opacity:0;transform:scale(0)}23.5%{opacity:0;transform:scale(0)}24.4%{opacity:1;transform:scale(1.6)}26%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t86{0%{opacity:0;transform:scale(0)}23.8%{opacity:0;transform:scale(0)}24.7%{opacity:1;transform:scale(1.6)}26.2%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t87{0%{opacity:0;transform:scale(0)}24%{opacity:0;transform:scale(0)}24.9%{opacity:1;transform:scale(1.6)}26.5%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t88{0%{opacity:0;transform:scale(0)}24.2%{opacity:0;transform:scale(0)}25.2%{opacity:1;transform:scale(1.6)}26.8%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t89{0%{opacity:0;transform:scale(0)}24.5%{opacity:0;transform:scale(0)}25.4%{opacity:1;transform:scale(1.6)}27%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t90{0%{opacity:0;transform:scale(0)}24.8%{opacity:0;transform:scale(0)}25.7%{opacity:1;transform:scale(1.6)}27.3%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t91{0%{opacity:0;transform:scale(0)}25%{opacity:0;transform:scale(0)}25.9%{opacity:1;transform:scale(1.6)}27.5%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t92{0%{opacity:0;transform:scale(0);fill:#2a78d6}25.2%{opacity:0;transform:scale(0)}26.2%{opacity:1;transform:scale(1.6)}27.8%{transform:scale(1)}54.4%{fill:#2a78d6}58.1%{fill:#eb6834}93.8%{opacity:1}100%{opacity:0;transform:scale(1);fill:#eb6834}}
+@keyframes t93{0%{opacity:0;transform:scale(0)}25.5%{opacity:0;transform:scale(0)}26.4%{opacity:1;transform:scale(1.6)}28%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t94{0%{opacity:0;transform:scale(0)}25.8%{opacity:0;transform:scale(0)}26.7%{opacity:1;transform:scale(1.6)}28.3%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t95{0%{opacity:0;transform:scale(0)}26%{opacity:0;transform:scale(0)}26.9%{opacity:1;transform:scale(1.6)}28.5%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t96{0%{opacity:0;transform:scale(0)}26.2%{opacity:0;transform:scale(0)}27.2%{opacity:1;transform:scale(1.6)}28.8%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t97{0%{opacity:0;transform:scale(0);fill:#2a78d6}26.5%{opacity:0;transform:scale(0)}27.4%{opacity:1;transform:scale(1.6)}29%{transform:scale(1)}54.4%{fill:#2a78d6}58.1%{fill:#eb6834}93.8%{opacity:1}100%{opacity:0;transform:scale(1);fill:#eb6834}}
+@keyframes t98{0%{opacity:0;transform:scale(0)}26.8%{opacity:0;transform:scale(0)}27.7%{opacity:1;transform:scale(1.6)}29.3%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t99{0%{opacity:0;transform:scale(0)}27%{opacity:0;transform:scale(0)}27.9%{opacity:1;transform:scale(1.6)}29.5%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t100{0%{opacity:0;transform:scale(0)}27.3%{opacity:0;transform:scale(0)}28.2%{opacity:1;transform:scale(1.6)}29.8%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t101{0%{opacity:0;transform:scale(0)}27.5%{opacity:0;transform:scale(0)}28.4%{opacity:1;transform:scale(1.6)}30%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t102{0%{opacity:0;transform:scale(0)}27.8%{opacity:0;transform:scale(0)}28.7%{opacity:1;transform:scale(1.6)}30.3%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t103{0%{opacity:0;transform:scale(0)}28%{opacity:0;transform:scale(0)}28.9%{opacity:1;transform:scale(1.6)}30.5%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t104{0%{opacity:0;transform:scale(0)}28.3%{opacity:0;transform:scale(0)}29.2%{opacity:1;transform:scale(1.6)}30.8%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t105{0%{opacity:0;transform:scale(0)}28.5%{opacity:0;transform:scale(0)}29.4%{opacity:1;transform:scale(1.6)}31%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t106{0%{opacity:0;transform:scale(0)}28.8%{opacity:0;transform:scale(0)}29.7%{opacity:1;transform:scale(1.6)}31.3%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t107{0%{opacity:0;transform:scale(0);fill:#2a78d6}29%{opacity:0;transform:scale(0)}29.9%{opacity:1;transform:scale(1.6)}31.5%{transform:scale(1)}54.4%{fill:#2a78d6}58.1%{fill:#eb6834}93.8%{opacity:1}100%{opacity:0;transform:scale(1);fill:#eb6834}}
+@keyframes t108{0%{opacity:0;transform:scale(0)}29.3%{opacity:0;transform:scale(0)}30.2%{opacity:1;transform:scale(1.6)}31.8%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t109{0%{opacity:0;transform:scale(0)}29.5%{opacity:0;transform:scale(0)}30.4%{opacity:1;transform:scale(1.6)}32%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t110{0%{opacity:0;transform:scale(0)}29.8%{opacity:0;transform:scale(0)}30.7%{opacity:1;transform:scale(1.6)}32.3%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t111{0%{opacity:0;transform:scale(0)}30%{opacity:0;transform:scale(0)}30.9%{opacity:1;transform:scale(1.6)}32.5%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t112{0%{opacity:0;transform:scale(0)}30.3%{opacity:0;transform:scale(0)}31.2%{opacity:1;transform:scale(1.6)}32.8%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t113{0%{opacity:0;transform:scale(0)}30.5%{opacity:0;transform:scale(0)}31.4%{opacity:1;transform:scale(1.6)}33%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t114{0%{opacity:0;transform:scale(0);fill:#2a78d6}30.8%{opacity:0;transform:scale(0)}31.7%{opacity:1;transform:scale(1.6)}33.3%{transform:scale(1)}54.4%{fill:#2a78d6}58.1%{fill:#eb6834}93.8%{opacity:1}100%{opacity:0;transform:scale(1);fill:#eb6834}}
+@keyframes t115{0%{opacity:0;transform:scale(0)}31%{opacity:0;transform:scale(0)}31.9%{opacity:1;transform:scale(1.6)}33.5%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t116{0%{opacity:0;transform:scale(0)}31.3%{opacity:0;transform:scale(0)}32.2%{opacity:1;transform:scale(1.6)}33.8%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t117{0%{opacity:0;transform:scale(0)}31.5%{opacity:0;transform:scale(0)}32.4%{opacity:1;transform:scale(1.6)}34%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t118{0%{opacity:0;transform:scale(0)}31.8%{opacity:0;transform:scale(0)}32.7%{opacity:1;transform:scale(1.6)}34.2%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t119{0%{opacity:0;transform:scale(0)}32%{opacity:0;transform:scale(0)}32.9%{opacity:1;transform:scale(1.6)}34.5%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t120{0%{opacity:0;transform:scale(0)}32.2%{opacity:0;transform:scale(0)}33.2%{opacity:1;transform:scale(1.6)}34.8%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t121{0%{opacity:0;transform:scale(0)}32.5%{opacity:0;transform:scale(0)}33.4%{opacity:1;transform:scale(1.6)}35%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t122{0%{opacity:0;transform:scale(0)}32.8%{opacity:0;transform:scale(0)}33.7%{opacity:1;transform:scale(1.6)}35.2%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t123{0%{opacity:0;transform:scale(0)}33%{opacity:0;transform:scale(0)}33.9%{opacity:1;transform:scale(1.6)}35.5%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t124{0%{opacity:0;transform:scale(0)}33.2%{opacity:0;transform:scale(0)}34.2%{opacity:1;transform:scale(1.6)}35.8%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t125{0%{opacity:0;transform:scale(0)}33.5%{opacity:0;transform:scale(0)}34.4%{opacity:1;transform:scale(1.6)}36%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t126{0%{opacity:0;transform:scale(0)}33.8%{opacity:0;transform:scale(0)}34.7%{opacity:1;transform:scale(1.6)}36.3%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t127{0%{opacity:0;transform:scale(0)}34%{opacity:0;transform:scale(0)}34.9%{opacity:1;transform:scale(1.6)}36.5%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t128{0%{opacity:0;transform:scale(0)}34.2%{opacity:0;transform:scale(0)}35.2%{opacity:1;transform:scale(1.6)}36.8%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t129{0%{opacity:0;transform:scale(0)}34.5%{opacity:0;transform:scale(0)}35.4%{opacity:1;transform:scale(1.6)}37%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t130{0%{opacity:0;transform:scale(0)}34.8%{opacity:0;transform:scale(0)}35.7%{opacity:1;transform:scale(1.6)}37.3%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t131{0%{opacity:0;transform:scale(0)}35%{opacity:0;transform:scale(0)}35.9%{opacity:1;transform:scale(1.6)}37.5%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t132{0%{opacity:0;transform:scale(0)}35.2%{opacity:0;transform:scale(0)}36.2%{opacity:1;transform:scale(1.6)}37.8%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t133{0%{opacity:0;transform:scale(0)}35.5%{opacity:0;transform:scale(0)}36.4%{opacity:1;transform:scale(1.6)}38%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t134{0%{opacity:0;transform:scale(0);fill:#2a78d6}35.8%{opacity:0;transform:scale(0)}36.7%{opacity:1;transform:scale(1.6)}38.3%{transform:scale(1)}54.4%{fill:#2a78d6}58.1%{fill:#eb6834}93.8%{opacity:1}100%{opacity:0;transform:scale(1);fill:#eb6834}}
+@keyframes t135{0%{opacity:0;transform:scale(0)}36%{opacity:0;transform:scale(0)}36.9%{opacity:1;transform:scale(1.6)}38.5%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t136{0%{opacity:0;transform:scale(0)}36.3%{opacity:0;transform:scale(0)}37.2%{opacity:1;transform:scale(1.6)}38.8%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t137{0%{opacity:0;transform:scale(0)}36.5%{opacity:0;transform:scale(0)}37.4%{opacity:1;transform:scale(1.6)}39%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t138{0%{opacity:0;transform:scale(0)}36.8%{opacity:0;transform:scale(0)}37.7%{opacity:1;transform:scale(1.6)}39.3%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t139{0%{opacity:0;transform:scale(0)}37%{opacity:0;transform:scale(0)}37.9%{opacity:1;transform:scale(1.6)}39.5%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t140{0%{opacity:0;transform:scale(0)}37.3%{opacity:0;transform:scale(0)}38.2%{opacity:1;transform:scale(1.6)}39.8%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t141{0%{opacity:0;transform:scale(0)}37.5%{opacity:0;transform:scale(0)}38.4%{opacity:1;transform:scale(1.6)}40%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t142{0%{opacity:0;transform:scale(0)}37.8%{opacity:0;transform:scale(0)}38.7%{opacity:1;transform:scale(1.6)}40.2%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t143{0%{opacity:0;transform:scale(0);fill:#2a78d6}38%{opacity:0;transform:scale(0)}38.9%{opacity:1;transform:scale(1.6)}40.5%{transform:scale(1)}54.4%{fill:#2a78d6}58.1%{fill:#eb6834}93.8%{opacity:1}100%{opacity:0;transform:scale(1);fill:#eb6834}}
+@keyframes t144{0%{opacity:0;transform:scale(0)}38.2%{opacity:0;transform:scale(0)}39.2%{opacity:1;transform:scale(1.6)}40.8%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t145{0%{opacity:0;transform:scale(0)}38.5%{opacity:0;transform:scale(0)}39.4%{opacity:1;transform:scale(1.6)}41%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t146{0%{opacity:0;transform:scale(0)}38.8%{opacity:0;transform:scale(0)}39.7%{opacity:1;transform:scale(1.6)}41.2%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t147{0%{opacity:0;transform:scale(0)}39%{opacity:0;transform:scale(0)}39.9%{opacity:1;transform:scale(1.6)}41.5%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t148{0%{opacity:0;transform:scale(0)}39.2%{opacity:0;transform:scale(0)}40.2%{opacity:1;transform:scale(1.6)}41.8%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t149{0%{opacity:0;transform:scale(0)}39.5%{opacity:0;transform:scale(0)}40.4%{opacity:1;transform:scale(1.6)}42%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t150{0%{opacity:0;transform:scale(0)}39.8%{opacity:0;transform:scale(0)}40.7%{opacity:1;transform:scale(1.6)}42.3%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t151{0%{opacity:0;transform:scale(0)}40%{opacity:0;transform:scale(0)}40.9%{opacity:1;transform:scale(1.6)}42.5%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t152{0%{opacity:0;transform:scale(0)}40.2%{opacity:0;transform:scale(0)}41.2%{opacity:1;transform:scale(1.6)}42.8%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t153{0%{opacity:0;transform:scale(0)}40.5%{opacity:0;transform:scale(0)}41.4%{opacity:1;transform:scale(1.6)}43%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t154{0%{opacity:0;transform:scale(0)}40.8%{opacity:0;transform:scale(0)}41.7%{opacity:1;transform:scale(1.6)}43.3%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t155{0%{opacity:0;transform:scale(0)}41%{opacity:0;transform:scale(0)}41.9%{opacity:1;transform:scale(1.6)}43.5%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t156{0%{opacity:0;transform:scale(0);fill:#2a78d6}41.2%{opacity:0;transform:scale(0)}42.2%{opacity:1;transform:scale(1.6)}43.8%{transform:scale(1)}54.4%{fill:#2a78d6}58.1%{fill:#eb6834}93.8%{opacity:1}100%{opacity:0;transform:scale(1);fill:#eb6834}}
+@keyframes t157{0%{opacity:0;transform:scale(0)}41.5%{opacity:0;transform:scale(0)}42.4%{opacity:1;transform:scale(1.6)}44%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t158{0%{opacity:0;transform:scale(0)}41.8%{opacity:0;transform:scale(0)}42.7%{opacity:1;transform:scale(1.6)}44.3%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t159{0%{opacity:0;transform:scale(0)}42%{opacity:0;transform:scale(0)}42.9%{opacity:1;transform:scale(1.6)}44.5%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t160{0%{opacity:0;transform:scale(0)}42.3%{opacity:0;transform:scale(0)}43.2%{opacity:1;transform:scale(1.6)}44.8%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t161{0%{opacity:0;transform:scale(0)}42.5%{opacity:0;transform:scale(0)}43.4%{opacity:1;transform:scale(1.6)}45%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t162{0%{opacity:0;transform:scale(0)}42.8%{opacity:0;transform:scale(0)}43.7%{opacity:1;transform:scale(1.6)}45.3%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t163{0%{opacity:0;transform:scale(0)}43%{opacity:0;transform:scale(0)}43.9%{opacity:1;transform:scale(1.6)}45.5%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t164{0%{opacity:0;transform:scale(0);fill:#2a78d6}43.3%{opacity:0;transform:scale(0)}44.2%{opacity:1;transform:scale(1.6)}45.8%{transform:scale(1)}54.4%{fill:#2a78d6}58.1%{fill:#eb6834}93.8%{opacity:1}100%{opacity:0;transform:scale(1);fill:#eb6834}}
+@keyframes t165{0%{opacity:0;transform:scale(0)}43.5%{opacity:0;transform:scale(0)}44.4%{opacity:1;transform:scale(1.6)}46%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t166{0%{opacity:0;transform:scale(0)}43.8%{opacity:0;transform:scale(0)}44.7%{opacity:1;transform:scale(1.6)}46.3%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t167{0%{opacity:0;transform:scale(0)}44%{opacity:0;transform:scale(0)}44.9%{opacity:1;transform:scale(1.6)}46.5%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t168{0%{opacity:0;transform:scale(0)}44.2%{opacity:0;transform:scale(0)}45.2%{opacity:1;transform:scale(1.6)}46.8%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t169{0%{opacity:0;transform:scale(0);fill:#2a78d6}44.5%{opacity:0;transform:scale(0)}45.4%{opacity:1;transform:scale(1.6)}47%{transform:scale(1)}54.4%{fill:#2a78d6}58.1%{fill:#eb6834}93.8%{opacity:1}100%{opacity:0;transform:scale(1);fill:#eb6834}}
+@keyframes t170{0%{opacity:0;transform:scale(0)}44.8%{opacity:0;transform:scale(0)}45.7%{opacity:1;transform:scale(1.6)}47.2%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t171{0%{opacity:0;transform:scale(0)}45%{opacity:0;transform:scale(0)}45.9%{opacity:1;transform:scale(1.6)}47.5%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t172{0%{opacity:0;transform:scale(0)}45.2%{opacity:0;transform:scale(0)}46.2%{opacity:1;transform:scale(1.6)}47.8%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t173{0%{opacity:0;transform:scale(0)}45.5%{opacity:0;transform:scale(0)}46.4%{opacity:1;transform:scale(1.6)}48%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t174{0%{opacity:0;transform:scale(0)}45.8%{opacity:0;transform:scale(0)}46.7%{opacity:1;transform:scale(1.6)}48.3%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t175{0%{opacity:0;transform:scale(0)}46%{opacity:0;transform:scale(0)}46.9%{opacity:1;transform:scale(1.6)}48.5%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t176{0%{opacity:0;transform:scale(0)}46.2%{opacity:0;transform:scale(0)}47.2%{opacity:1;transform:scale(1.6)}48.8%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t177{0%{opacity:0;transform:scale(0)}46.5%{opacity:0;transform:scale(0)}47.4%{opacity:1;transform:scale(1.6)}49%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t178{0%{opacity:0;transform:scale(0)}46.8%{opacity:0;transform:scale(0)}47.7%{opacity:1;transform:scale(1.6)}49.3%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t179{0%{opacity:0;transform:scale(0)}47%{opacity:0;transform:scale(0)}47.9%{opacity:1;transform:scale(1.6)}49.5%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t180{0%{opacity:0;transform:scale(0)}47.2%{opacity:0;transform:scale(0)}48.2%{opacity:1;transform:scale(1.6)}49.8%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t181{0%{opacity:0;transform:scale(0)}47.5%{opacity:0;transform:scale(0)}48.4%{opacity:1;transform:scale(1.6)}50%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t182{0%{opacity:0;transform:scale(0)}47.8%{opacity:0;transform:scale(0)}48.7%{opacity:1;transform:scale(1.6)}50.3%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t183{0%{opacity:0;transform:scale(0)}48%{opacity:0;transform:scale(0)}48.9%{opacity:1;transform:scale(1.6)}50.5%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t184{0%{opacity:0;transform:scale(0)}48.3%{opacity:0;transform:scale(0)}49.2%{opacity:1;transform:scale(1.6)}50.8%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t185{0%{opacity:0;transform:scale(0)}48.5%{opacity:0;transform:scale(0)}49.4%{opacity:1;transform:scale(1.6)}51%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t186{0%{opacity:0;transform:scale(0)}48.8%{opacity:0;transform:scale(0)}49.7%{opacity:1;transform:scale(1.6)}51.3%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t187{0%{opacity:0;transform:scale(0)}49%{opacity:0;transform:scale(0)}49.9%{opacity:1;transform:scale(1.6)}51.5%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t188{0%{opacity:0;transform:scale(0)}49.3%{opacity:0;transform:scale(0)}50.2%{opacity:1;transform:scale(1.6)}51.8%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t189{0%{opacity:0;transform:scale(0)}49.5%{opacity:0;transform:scale(0)}50.4%{opacity:1;transform:scale(1.6)}52%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t190{0%{opacity:0;transform:scale(0)}49.8%{opacity:0;transform:scale(0)}50.7%{opacity:1;transform:scale(1.6)}52.3%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t191{0%{opacity:0;transform:scale(0)}50%{opacity:0;transform:scale(0)}50.9%{opacity:1;transform:scale(1.6)}52.5%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t192{0%{opacity:0;transform:scale(0)}50.3%{opacity:0;transform:scale(0)}51.2%{opacity:1;transform:scale(1.6)}52.8%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t193{0%{opacity:0;transform:scale(0)}50.5%{opacity:0;transform:scale(0)}51.4%{opacity:1;transform:scale(1.6)}53%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t194{0%{opacity:0;transform:scale(0)}50.7%{opacity:0;transform:scale(0)}51.7%{opacity:1;transform:scale(1.6)}53.2%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t195{0%{opacity:0;transform:scale(0);fill:#2a78d6}51%{opacity:0;transform:scale(0)}51.9%{opacity:1;transform:scale(1.6)}53.5%{transform:scale(1)}54.4%{fill:#2a78d6}58.1%{fill:#eb6834}93.8%{opacity:1}100%{opacity:0;transform:scale(1);fill:#eb6834}}
+@keyframes t196{0%{opacity:0;transform:scale(0)}51.2%{opacity:0;transform:scale(0)}52.2%{opacity:1;transform:scale(1.6)}53.8%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t197{0%{opacity:0;transform:scale(0);fill:#2a78d6}51.5%{opacity:0;transform:scale(0)}52.4%{opacity:1;transform:scale(1.6)}54%{transform:scale(1)}54.4%{fill:#2a78d6}58.1%{fill:#eb6834}93.8%{opacity:1}100%{opacity:0;transform:scale(1);fill:#eb6834}}
+@keyframes t198{0%{opacity:0;transform:scale(0)}51.7%{opacity:0;transform:scale(0)}52.7%{opacity:1;transform:scale(1.6)}54.2%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t199{0%{opacity:0;transform:scale(0)}52%{opacity:0;transform:scale(0)}52.9%{opacity:1;transform:scale(1.6)}54.5%{transform:scale(1)}93.8%{opacity:1}100%{opacity:0;transform:scale(1)}}
+@keyframes t200{0%{opacity:0;transform:scale(0);fill:#2a78d6}52.2%{opacity:0;transform:scale(0)}53.2%{opacity:1;transform:scale(1.6)}54.8%{transform:scale(1)}54.4%{fill:#2a78d6}58.1%{fill:#eb6834}93.8%{opacity:1}100%{opacity:0;transform:scale(1);fill:#eb6834}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+<rect x="0.5" y="0.5" width="879" height="429" rx="8" fill="#ffffff" stroke="#d1d9e0"/>
+<text x="852" y="34" class="b end ph0">Trials 1–60: random exploration</text>
+<text x="852" y="34" class="b end ph1">Trials 61–200: TPE-guided search</text>
+<text x="852" y="34" class="b end ph2">14 trials on the Pareto front</text>
+<circle cx="77" cy="29" r="5" fill="#a0a9b3"/>
+<text x="87" y="34" class="ink2">random (60)</text>
+<circle cx="195.4" cy="29" r="5" fill="#2a78d6"/>
+<text x="205.4" y="34" class="ink2">TPE-guided (140)</text>
+<circle cx="350.8" cy="29" r="5" fill="#eb6834"/>
+<text x="360.8" y="34" class="ink2">Pareto front</text>
+<path d="M72,372H852" stroke="#c8d1da" stroke-width="1"/>
+<text x="64" y="376" class="small muted end">20</text>
+<path d="M72,293H852" stroke="#eef1f4" stroke-width="1"/>
+<text x="64" y="297" class="small muted end">40</text>
+<path d="M72,214H852" stroke="#eef1f4" stroke-width="1"/>
+<text x="64" y="218" class="small muted end">60</text>
+<path d="M72,135H852" stroke="#eef1f4" stroke-width="1"/>
+<text x="64" y="139" class="small muted end">80</text>
+<path d="M72,56H852" stroke="#eef1f4" stroke-width="1"/>
+<text x="64" y="60" class="small muted end">100</text>
+<path d="M137,56V372" stroke="#eef1f4" stroke-width="1"/>
+<text x="137" y="392" class="small muted mid">0.001</text>
+<path d="M397,56V372" stroke="#eef1f4" stroke-width="1"/>
+<text x="397" y="392" class="small muted mid">0.01</text>
+<path d="M657,56V372" stroke="#eef1f4" stroke-width="1"/>
+<text x="657" y="392" class="small muted mid">0.1</text>
+<path d="M72,59.9H852" stroke="#818b98" stroke-width="1" stroke-dasharray="4 4"/>
+<text x="80" y="77.9" class="small muted">original model: 99</text>
+<text x="462.0" y="416" class="small ink2 mid">KL divergence from the original model (first token, harmless prompts; log scale)</text>
+<text transform="translate(26,214.0) rotate(-90)" class="small ink2 mid">Refusals out of 100 harmful prompts</text>
+<circle class="dot" cx="322.5" cy="63.9" r="4.5" fill="#a0a9b3" stroke="#ffffff" stroke-width="1.5" style="animation:t1 16.0s infinite ease-out"/>
+<circle class="dot" cx="305" cy="59.9" r="4.5" fill="#a0a9b3" stroke="#ffffff" stroke-width="1.5" style="animation:t2 16.0s infinite ease-out"/>
+<circle class="dot" cx="469.7" cy="71.8" r="4.5" fill="#a0a9b3" stroke="#ffffff" stroke-width="1.5" style="animation:t3 16.0s infinite ease-out"/>
+<circle class="dot" cx="677.8" cy="178.4" r="4.5" fill="#a0a9b3" stroke="#ffffff" stroke-width="1.5" style="animation:t4 16.0s infinite ease-out"/>
+<circle class="dot" cx="609.2" cy="182.4" r="4.5" fill="#a0a9b3" stroke="#ffffff" stroke-width="1.5" style="animation:t5 16.0s infinite ease-out"/>
+<circle class="dot" cx="567.6" cy="63.9" r="4.5" fill="#a0a9b3" stroke="#ffffff" stroke-width="1.5" style="animation:t6 16.0s infinite ease-out"/>
+<circle class="dot" cx="791" cy="186.3" r="4.5" fill="#a0a9b3" stroke="#ffffff" stroke-width="1.5" style="animation:t7 16.0s infinite ease-out"/>
+<circle class="dot" cx="754" cy="174.5" r="4.5" fill="#a0a9b3" stroke="#ffffff" stroke-width="1.5" style="animation:t8 16.0s infinite ease-out"/>
+<circle class="dot" cx="264.7" cy="59.9" r="4.5" fill="#a0a9b3" stroke="#ffffff" stroke-width="1.5" style="animation:t9 16.0s infinite ease-out"/>
+<circle class="dot" cx="194.4" cy="59.9" r="4.5" fill="#a0a9b3" stroke="#ffffff" stroke-width="1.5" style="animation:t10 16.0s infinite ease-out"/>
+<circle class="dot" cx="337.3" cy="63.9" r="4.5" fill="#a0a9b3" stroke="#ffffff" stroke-width="1.5" style="animation:t11 16.0s infinite ease-out"/>
+<circle class="dot" cx="311" cy="59.9" r="4.5" fill="#a0a9b3" stroke="#ffffff" stroke-width="1.5" style="animation:t12 16.0s infinite ease-out"/>
+<circle class="dot" cx="488.8" cy="71.8" r="4.5" fill="#a0a9b3" stroke="#ffffff" stroke-width="1.5" style="animation:t13 16.0s infinite ease-out"/>
+<circle class="dot" cx="406.2" cy="59.9" r="4.5" fill="#a0a9b3" stroke="#ffffff" stroke-width="1.5" style="animation:t14 16.0s infinite ease-out"/>
+<circle class="dot" cx="264.1" cy="59.9" r="4.5" fill="#a0a9b3" stroke="#ffffff" stroke-width="1.5" style="animation:t15 16.0s infinite ease-out"/>
+<circle class="dot" cx="406.1" cy="59.9" r="4.5" fill="#a0a9b3" stroke="#ffffff" stroke-width="1.5" style="animation:t16 16.0s infinite ease-out"/>
+<circle class="dot" cx="416.8" cy="63.9" r="4.5" fill="#a0a9b3" stroke="#ffffff" stroke-width="1.5" style="animation:t17 16.0s infinite ease-out"/>
+<circle class="dot" cx="603.6" cy="71.8" r="4.5" fill="#a0a9b3" stroke="#ffffff" stroke-width="1.5" style="animation:t18 16.0s infinite ease-out"/>
+<circle class="dot" cx="253.4" cy="59.9" r="4.5" fill="#a0a9b3" stroke="#ffffff" stroke-width="1.5" style="animation:t19 16.0s infinite ease-out"/>
+<circle class="dot" cx="749.1" cy="178.4" r="4.5" fill="#a0a9b3" stroke="#ffffff" stroke-width="1.5" style="animation:t20 16.0s infinite ease-out"/>
+<circle class="dot" cx="493.5" cy="59.9" r="4.5" fill="#a0a9b3" stroke="#ffffff" stroke-width="1.5" style="animation:t21 16.0s infinite ease-out"/>
+<circle class="dot" cx="801.9" cy="210.1" r="4.5" fill="#a0a9b3" stroke="#ffffff" stroke-width="1.5" style="animation:t22 16.0s infinite ease-out"/>
+<circle class="dot" cx="485.7" cy="63.9" r="4.5" fill="#a0a9b3" stroke="#ffffff" stroke-width="1.5" style="animation:t23 16.0s infinite ease-out"/>
+<circle class="dot" cx="191.6" cy="59.9" r="4.5" fill="#a0a9b3" stroke="#ffffff" stroke-width="1.5" style="animation:t24 16.0s infinite ease-out"/>
+<circle class="dot" cx="427.9" cy="154.8" r="4.5" fill="#eb6834" stroke="#ffffff" stroke-width="1.5" style="animation:t25 16.0s infinite ease-out"/>
+<circle class="dot" cx="490.1" cy="71.8" r="4.5" fill="#a0a9b3" stroke="#ffffff" stroke-width="1.5" style="animation:t26 16.0s infinite ease-out"/>
+<circle class="dot" cx="764.8" cy="206.1" r="4.5" fill="#a0a9b3" stroke="#ffffff" stroke-width="1.5" style="animation:t27 16.0s infinite ease-out"/>
+<circle class="dot" cx="448.6" cy="63.9" r="4.5" fill="#a0a9b3" stroke="#ffffff" stroke-width="1.5" style="animation:t28 16.0s infinite ease-out"/>
+<circle class="dot" cx="478.7" cy="63.9" r="4.5" fill="#a0a9b3" stroke="#ffffff" stroke-width="1.5" style="animation:t29 16.0s infinite ease-out"/>
+<circle class="dot" cx="537.3" cy="146.8" r="4.5" fill="#a0a9b3" stroke="#ffffff" stroke-width="1.5" style="animation:t30 16.0s infinite ease-out"/>
+<circle class="dot" cx="634" cy="162.7" r="4.5" fill="#a0a9b3" stroke="#ffffff" stroke-width="1.5" style="animation:t31 16.0s infinite ease-out"/>
+<circle class="dot" cx="501.4" cy="103.4" r="4.5" fill="#a0a9b3" stroke="#ffffff" stroke-width="1.5" style="animation:t32 16.0s infinite ease-out"/>
+<circle class="dot" cx="546.5" cy="59.9" r="4.5" fill="#a0a9b3" stroke="#ffffff" stroke-width="1.5" style="animation:t33 16.0s infinite ease-out"/>
+<circle class="dot" cx="707.1" cy="138.9" r="4.5" fill="#a0a9b3" stroke="#ffffff" stroke-width="1.5" style="animation:t34 16.0s infinite ease-out"/>
+<circle class="dot" cx="793.5" cy="206.1" r="4.5" fill="#a0a9b3" stroke="#ffffff" stroke-width="1.5" style="animation:t35 16.0s infinite ease-out"/>
+<circle class="dot" cx="503.2" cy="59.9" r="4.5" fill="#a0a9b3" stroke="#ffffff" stroke-width="1.5" style="animation:t36 16.0s infinite ease-out"/>
+<circle class="dot" cx="477.2" cy="170.6" r="4.5" fill="#a0a9b3" stroke="#ffffff" stroke-width="1.5" style="animation:t37 16.0s infinite ease-out"/>
+<circle class="dot" cx="561.5" cy="115.2" r="4.5" fill="#a0a9b3" stroke="#ffffff" stroke-width="1.5" style="animation:t38 16.0s infinite ease-out"/>
+<circle class="dot" cx="702.8" cy="198.2" r="4.5" fill="#a0a9b3" stroke="#ffffff" stroke-width="1.5" style="animation:t39 16.0s infinite ease-out"/>
+<circle class="dot" cx="441.8" cy="67.8" r="4.5" fill="#a0a9b3" stroke="#ffffff" stroke-width="1.5" style="animation:t40 16.0s infinite ease-out"/>
+<circle class="dot" cx="737.8" cy="198.2" r="4.5" fill="#a0a9b3" stroke="#ffffff" stroke-width="1.5" style="animation:t41 16.0s infinite ease-out"/>
+<circle class="dot" cx="299.9" cy="63.9" r="4.5" fill="#a0a9b3" stroke="#ffffff" stroke-width="1.5" style="animation:t42 16.0s infinite ease-out"/>
+<circle class="dot" cx="172.2" cy="59.9" r="4.5" fill="#a0a9b3" stroke="#ffffff" stroke-width="1.5" style="animation:t43 16.0s infinite ease-out"/>
+<circle class="dot" cx="365.5" cy="63.9" r="4.5" fill="#a0a9b3" stroke="#ffffff" stroke-width="1.5" style="animation:t44 16.0s infinite ease-out"/>
+<circle class="dot" cx="686.5" cy="150.8" r="4.5" fill="#a0a9b3" stroke="#ffffff" stroke-width="1.5" style="animation:t45 16.0s infinite ease-out"/>
+<circle class="dot" cx="383.6" cy="63.9" r="4.5" fill="#a0a9b3" stroke="#ffffff" stroke-width="1.5" style="animation:t46 16.0s infinite ease-out"/>
+<circle class="dot" cx="311.7" cy="63.9" r="4.5" fill="#a0a9b3" stroke="#ffffff" stroke-width="1.5" style="animation:t47 16.0s infinite ease-out"/>
+<circle class="dot" cx="582.9" cy="198.2" r="4.5" fill="#a0a9b3" stroke="#ffffff" stroke-width="1.5" style="animation:t48 16.0s infinite ease-out"/>
+<circle class="dot" cx="521.7" cy="107.3" r="4.5" fill="#a0a9b3" stroke="#ffffff" stroke-width="1.5" style="animation:t49 16.0s infinite ease-out"/>
+<circle class="dot" cx="689.4" cy="123.2" r="4.5" fill="#a0a9b3" stroke="#ffffff" stroke-width="1.5" style="animation:t50 16.0s infinite ease-out"/>
+<circle class="dot" cx="653.8" cy="87.6" r="4.5" fill="#a0a9b3" stroke="#ffffff" stroke-width="1.5" style="animation:t51 16.0s infinite ease-out"/>
+<circle class="dot" cx="422.6" cy="59.9" r="4.5" fill="#a0a9b3" stroke="#ffffff" stroke-width="1.5" style="animation:t52 16.0s infinite ease-out"/>
+<circle class="dot" cx="751.8" cy="170.6" r="4.5" fill="#a0a9b3" stroke="#ffffff" stroke-width="1.5" style="animation:t53 16.0s infinite ease-out"/>
+<circle class="dot" cx="440.3" cy="67.8" r="4.5" fill="#a0a9b3" stroke="#ffffff" stroke-width="1.5" style="animation:t54 16.0s infinite ease-out"/>
+<circle class="dot" cx="335.4" cy="63.9" r="4.5" fill="#a0a9b3" stroke="#ffffff" stroke-width="1.5" style="animation:t55 16.0s infinite ease-out"/>
+<circle class="dot" cx="666.8" cy="162.7" r="4.5" fill="#a0a9b3" stroke="#ffffff" stroke-width="1.5" style="animation:t56 16.0s infinite ease-out"/>
+<circle class="dot" cx="596.1" cy="162.7" r="4.5" fill="#a0a9b3" stroke="#ffffff" stroke-width="1.5" style="animation:t57 16.0s infinite ease-out"/>
+<circle class="dot" cx="154.6" cy="59.9" r="4.5" fill="#a0a9b3" stroke="#ffffff" stroke-width="1.5" style="animation:t58 16.0s infinite ease-out"/>
+<circle class="dot" cx="791.2" cy="190.3" r="4.5" fill="#a0a9b3" stroke="#ffffff" stroke-width="1.5" style="animation:t59 16.0s infinite ease-out"/>
+<circle class="dot" cx="522.8" cy="107.3" r="4.5" fill="#a0a9b3" stroke="#ffffff" stroke-width="1.5" style="animation:t60 16.0s infinite ease-out"/>
+<circle class="dot" cx="560.3" cy="190.3" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t61 16.0s infinite ease-out"/>
+<circle class="dot" cx="579.6" cy="202.2" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t62 16.0s infinite ease-out"/>
+<circle class="dot" cx="766.6" cy="198.2" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t63 16.0s infinite ease-out"/>
+<circle class="dot" cx="430.9" cy="95.5" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t64 16.0s infinite ease-out"/>
+<circle class="dot" cx="589.4" cy="229.8" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t65 16.0s infinite ease-out"/>
+<circle class="dot" cx="457.7" cy="135" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t66 16.0s infinite ease-out"/>
+<circle class="dot" cx="411.3" cy="67.8" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t67 16.0s infinite ease-out"/>
+<circle class="dot" cx="460.4" cy="87.6" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t68 16.0s infinite ease-out"/>
+<circle class="dot" cx="416.1" cy="63.9" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t69 16.0s infinite ease-out"/>
+<circle class="dot" cx="618.4" cy="273.2" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t70 16.0s infinite ease-out"/>
+<circle class="dot" cx="563.1" cy="241.7" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t71 16.0s infinite ease-out"/>
+<circle class="dot" cx="575.8" cy="206.1" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t72 16.0s infinite ease-out"/>
+<circle class="dot" cx="394.8" cy="63.9" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t73 16.0s infinite ease-out"/>
+<circle class="dot" cx="649.3" cy="91.6" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t74 16.0s infinite ease-out"/>
+<circle class="dot" cx="799.5" cy="182.4" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t75 16.0s infinite ease-out"/>
+<circle class="dot" cx="368.9" cy="67.8" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t76 16.0s infinite ease-out"/>
+<circle class="dot" cx="464.6" cy="107.3" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t77 16.0s infinite ease-out"/>
+<circle class="dot" cx="544.1" cy="218" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t78 16.0s infinite ease-out"/>
+<circle class="dot" cx="546.7" cy="308.8" r="4.5" fill="#eb6834" stroke="#ffffff" stroke-width="1.5" style="animation:t79 16.0s infinite ease-out"/>
+<circle class="dot" cx="530.2" cy="237.7" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t80 16.0s infinite ease-out"/>
+<circle class="dot" cx="552" cy="221.9" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t81 16.0s infinite ease-out"/>
+<circle class="dot" cx="594.7" cy="71.8" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t82 16.0s infinite ease-out"/>
+<circle class="dot" cx="703.3" cy="190.3" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t83 16.0s infinite ease-out"/>
+<circle class="dot" cx="386" cy="67.8" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t84 16.0s infinite ease-out"/>
+<circle class="dot" cx="730.6" cy="174.5" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t85 16.0s infinite ease-out"/>
+<circle class="dot" cx="412.2" cy="71.8" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t86 16.0s infinite ease-out"/>
+<circle class="dot" cx="406.7" cy="63.9" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t87 16.0s infinite ease-out"/>
+<circle class="dot" cx="513.9" cy="107.3" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t88 16.0s infinite ease-out"/>
+<circle class="dot" cx="795.5" cy="241.7" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t89 16.0s infinite ease-out"/>
+<circle class="dot" cx="460.1" cy="154.8" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t90 16.0s infinite ease-out"/>
+<circle class="dot" cx="414.8" cy="75.8" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t91 16.0s infinite ease-out"/>
+<circle class="dot" cx="469.5" cy="210.1" r="4.5" fill="#eb6834" stroke="#ffffff" stroke-width="1.5" style="animation:t92 16.0s infinite ease-out"/>
+<circle class="dot" cx="547.9" cy="150.8" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t93 16.0s infinite ease-out"/>
+<circle class="dot" cx="435.3" cy="79.7" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t94 16.0s infinite ease-out"/>
+<circle class="dot" cx="462.3" cy="162.7" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t95 16.0s infinite ease-out"/>
+<circle class="dot" cx="597" cy="293" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t96 16.0s infinite ease-out"/>
+<circle class="dot" cx="375.1" cy="71.8" r="4.5" fill="#eb6834" stroke="#ffffff" stroke-width="1.5" style="animation:t97 16.0s infinite ease-out"/>
+<circle class="dot" cx="393.2" cy="71.8" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t98 16.0s infinite ease-out"/>
+<circle class="dot" cx="422.5" cy="119.2" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t99 16.0s infinite ease-out"/>
+<circle class="dot" cx="305.9" cy="63.9" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t100 16.0s infinite ease-out"/>
+<circle class="dot" cx="466.3" cy="127.1" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t101 16.0s infinite ease-out"/>
+<circle class="dot" cx="591.4" cy="67.8" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t102 16.0s infinite ease-out"/>
+<circle class="dot" cx="236.6" cy="59.9" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t103 16.0s infinite ease-out"/>
+<circle class="dot" cx="429.9" cy="123.2" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t104 16.0s infinite ease-out"/>
+<circle class="dot" cx="379.7" cy="59.9" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t105 16.0s infinite ease-out"/>
+<circle class="dot" cx="765.4" cy="158.7" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t106 16.0s infinite ease-out"/>
+<circle class="dot" cx="391.3" cy="91.6" r="4.5" fill="#eb6834" stroke="#ffffff" stroke-width="1.5" style="animation:t107 16.0s infinite ease-out"/>
+<circle class="dot" cx="376.2" cy="67.8" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t108 16.0s infinite ease-out"/>
+<circle class="dot" cx="407.6" cy="67.8" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t109 16.0s infinite ease-out"/>
+<circle class="dot" cx="541.2" cy="218" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t110 16.0s infinite ease-out"/>
+<circle class="dot" cx="534.6" cy="182.4" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t111 16.0s infinite ease-out"/>
+<circle class="dot" cx="629.5" cy="67.8" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t112 16.0s infinite ease-out"/>
+<circle class="dot" cx="581.9" cy="91.6" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t113 16.0s infinite ease-out"/>
+<circle class="dot" cx="518.2" cy="273.2" r="4.5" fill="#eb6834" stroke="#ffffff" stroke-width="1.5" style="animation:t114 16.0s infinite ease-out"/>
+<circle class="dot" cx="601.4" cy="225.8" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t115 16.0s infinite ease-out"/>
+<circle class="dot" cx="577.1" cy="233.8" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t116 16.0s infinite ease-out"/>
+<circle class="dot" cx="689.8" cy="186.3" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t117 16.0s infinite ease-out"/>
+<circle class="dot" cx="450.2" cy="103.4" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t118 16.0s infinite ease-out"/>
+<circle class="dot" cx="447.6" cy="119.2" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t119 16.0s infinite ease-out"/>
+<circle class="dot" cx="437.2" cy="91.6" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t120 16.0s infinite ease-out"/>
+<circle class="dot" cx="599.7" cy="285.1" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t121 16.0s infinite ease-out"/>
+<circle class="dot" cx="359.7" cy="63.9" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t122 16.0s infinite ease-out"/>
+<circle class="dot" cx="566.3" cy="277.2" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t123 16.0s infinite ease-out"/>
+<circle class="dot" cx="532.7" cy="150.8" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t124 16.0s infinite ease-out"/>
+<circle class="dot" cx="241" cy="59.9" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t125 16.0s infinite ease-out"/>
+<circle class="dot" cx="412.7" cy="123.2" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t126 16.0s infinite ease-out"/>
+<circle class="dot" cx="508.8" cy="210.1" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t127 16.0s infinite ease-out"/>
+<circle class="dot" cx="430.3" cy="67.8" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t128 16.0s infinite ease-out"/>
+<circle class="dot" cx="199.8" cy="59.9" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t129 16.0s infinite ease-out"/>
+<circle class="dot" cx="792.5" cy="206.1" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t130 16.0s infinite ease-out"/>
+<circle class="dot" cx="443.2" cy="127.1" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t131 16.0s infinite ease-out"/>
+<circle class="dot" cx="626" cy="111.3" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t132 16.0s infinite ease-out"/>
+<circle class="dot" cx="573.8" cy="269.3" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t133 16.0s infinite ease-out"/>
+<circle class="dot" cx="436.6" cy="162.7" r="4.5" fill="#eb6834" stroke="#ffffff" stroke-width="1.5" style="animation:t134 16.0s infinite ease-out"/>
+<circle class="dot" cx="601.7" cy="289.1" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t135 16.0s infinite ease-out"/>
+<circle class="dot" cx="562" cy="229.8" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t136 16.0s infinite ease-out"/>
+<circle class="dot" cx="526.2" cy="186.3" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t137 16.0s infinite ease-out"/>
+<circle class="dot" cx="585.6" cy="249.6" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t138 16.0s infinite ease-out"/>
+<circle class="dot" cx="499.1" cy="83.7" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t139 16.0s infinite ease-out"/>
+<circle class="dot" cx="716.7" cy="174.5" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t140 16.0s infinite ease-out"/>
+<circle class="dot" cx="638.2" cy="95.5" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t141 16.0s infinite ease-out"/>
+<circle class="dot" cx="782.4" cy="221.9" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t142 16.0s infinite ease-out"/>
+<circle class="dot" cx="551.5" cy="312.8" r="4.5" fill="#eb6834" stroke="#ffffff" stroke-width="1.5" style="animation:t143 16.0s infinite ease-out"/>
+<circle class="dot" cx="556.3" cy="214" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t144 16.0s infinite ease-out"/>
+<circle class="dot" cx="460.7" cy="162.7" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t145 16.0s infinite ease-out"/>
+<circle class="dot" cx="473" cy="138.9" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t146 16.0s infinite ease-out"/>
+<circle class="dot" cx="374.2" cy="67.8" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t147 16.0s infinite ease-out"/>
+<circle class="dot" cx="458.4" cy="127.1" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t148 16.0s infinite ease-out"/>
+<circle class="dot" cx="588.6" cy="300.9" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t149 16.0s infinite ease-out"/>
+<circle class="dot" cx="449.9" cy="95.5" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t150 16.0s infinite ease-out"/>
+<circle class="dot" cx="447.7" cy="146.8" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t151 16.0s infinite ease-out"/>
+<circle class="dot" cx="674.6" cy="83.7" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t152 16.0s infinite ease-out"/>
+<circle class="dot" cx="478.7" cy="123.2" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t153 16.0s infinite ease-out"/>
+<circle class="dot" cx="418" cy="67.8" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t154 16.0s infinite ease-out"/>
+<circle class="dot" cx="448.8" cy="59.9" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t155 16.0s infinite ease-out"/>
+<circle class="dot" cx="399.8" cy="123.2" r="4.5" fill="#eb6834" stroke="#ffffff" stroke-width="1.5" style="animation:t156 16.0s infinite ease-out"/>
+<circle class="dot" cx="352.5" cy="67.8" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t157 16.0s infinite ease-out"/>
+<circle class="dot" cx="498.3" cy="71.8" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t158 16.0s infinite ease-out"/>
+<circle class="dot" cx="539.1" cy="253.5" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t159 16.0s infinite ease-out"/>
+<circle class="dot" cx="732.8" cy="162.7" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t160 16.0s infinite ease-out"/>
+<circle class="dot" cx="321.9" cy="63.9" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t161 16.0s infinite ease-out"/>
+<circle class="dot" cx="517.3" cy="59.9" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t162 16.0s infinite ease-out"/>
+<circle class="dot" cx="356.9" cy="67.8" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t163 16.0s infinite ease-out"/>
+<circle class="dot" cx="516.6" cy="265.4" r="4.5" fill="#eb6834" stroke="#ffffff" stroke-width="1.5" style="animation:t164 16.0s infinite ease-out"/>
+<circle class="dot" cx="479.5" cy="103.4" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t165 16.0s infinite ease-out"/>
+<circle class="dot" cx="565" cy="312.8" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t166 16.0s infinite ease-out"/>
+<circle class="dot" cx="328.8" cy="63.9" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t167 16.0s infinite ease-out"/>
+<circle class="dot" cx="462.9" cy="107.3" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t168 16.0s infinite ease-out"/>
+<circle class="dot" cx="324.1" cy="67.8" r="4.5" fill="#eb6834" stroke="#ffffff" stroke-width="1.5" style="animation:t169 16.0s infinite ease-out"/>
+<circle class="dot" cx="702.2" cy="142.9" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t170 16.0s infinite ease-out"/>
+<circle class="dot" cx="340.7" cy="63.9" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t171 16.0s infinite ease-out"/>
+<circle class="dot" cx="538.4" cy="150.8" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t172 16.0s infinite ease-out"/>
+<circle class="dot" cx="222.9" cy="59.9" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t173 16.0s infinite ease-out"/>
+<circle class="dot" cx="554.7" cy="111.3" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t174 16.0s infinite ease-out"/>
+<circle class="dot" cx="433.6" cy="95.5" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t175 16.0s infinite ease-out"/>
+<circle class="dot" cx="470.3" cy="67.8" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t176 16.0s infinite ease-out"/>
+<circle class="dot" cx="599.9" cy="103.4" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t177 16.0s infinite ease-out"/>
+<circle class="dot" cx="341.5" cy="63.9" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t178 16.0s infinite ease-out"/>
+<circle class="dot" cx="551" cy="186.3" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t179 16.0s infinite ease-out"/>
+<circle class="dot" cx="683.2" cy="202.2" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t180 16.0s infinite ease-out"/>
+<circle class="dot" cx="481" cy="59.9" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t181 16.0s infinite ease-out"/>
+<circle class="dot" cx="453.1" cy="138.9" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t182 16.0s infinite ease-out"/>
+<circle class="dot" cx="393.6" cy="63.9" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t183 16.0s infinite ease-out"/>
+<circle class="dot" cx="202.6" cy="59.9" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t184 16.0s infinite ease-out"/>
+<circle class="dot" cx="710.8" cy="194.2" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t185 16.0s infinite ease-out"/>
+<circle class="dot" cx="726.9" cy="178.4" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t186 16.0s infinite ease-out"/>
+<circle class="dot" cx="811.9" cy="245.6" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t187 16.0s infinite ease-out"/>
+<circle class="dot" cx="402.2" cy="63.9" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t188 16.0s infinite ease-out"/>
+<circle class="dot" cx="488.1" cy="67.8" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t189 16.0s infinite ease-out"/>
+<circle class="dot" cx="433.2" cy="67.8" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t190 16.0s infinite ease-out"/>
+<circle class="dot" cx="792.6" cy="237.7" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t191 16.0s infinite ease-out"/>
+<circle class="dot" cx="602.8" cy="123.2" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t192 16.0s infinite ease-out"/>
+<circle class="dot" cx="684.2" cy="146.8" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t193 16.0s infinite ease-out"/>
+<circle class="dot" cx="808.3" cy="249.6" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t194 16.0s infinite ease-out"/>
+<circle class="dot" cx="226" cy="63.9" r="4.5" fill="#eb6834" stroke="#ffffff" stroke-width="1.5" style="animation:t195 16.0s infinite ease-out"/>
+<circle class="dot" cx="448.3" cy="67.8" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t196 16.0s infinite ease-out"/>
+<circle class="dot" cx="121" cy="59.9" r="4.5" fill="#eb6834" stroke="#ffffff" stroke-width="1.5" style="animation:t197 16.0s infinite ease-out"/>
+<circle class="dot" cx="760.7" cy="198.2" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t198 16.0s infinite ease-out"/>
+<circle class="dot" cx="480.7" cy="79.7" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="animation:t199 16.0s infinite ease-out"/>
+<circle class="dot" cx="487.8" cy="214" r="4.5" fill="#eb6834" stroke="#ffffff" stroke-width="1.5" style="animation:t200 16.0s infinite ease-out"/>
+<path class="front" d="M121,59.9H226V63.9H324.1V67.8H375.1V71.8H391.3V91.6H399.8V123.2H427.9V154.8H436.6V162.7H469.5V210.1H487.8V214H516.6V265.4H518.2V273.2H546.7V308.8H551.5V312.8" pathLength="1" stroke="#eb6834" stroke-width="2" fill="none"/>
+<circle class="pick" cx="551.5" cy="312.8" r="11" fill="none" stroke="#1f2328" stroke-width="2"/>
+<g class="picklabel"><path d="M559.5,320.8L591.5,352.8" stroke="#59636e" stroke-width="1"/><text x="595.5" y="358.8" class="b">Trial 143 (saved)</text><text x="595.5" y="376.8" class="ink2">35 refusals, KL 0.039</text></g>
+</svg>

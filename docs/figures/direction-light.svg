@@ -1,0 +1,230 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 400" width="880" height="400" role="img" aria-labelledby="title desc">
+<title id="title">Abliteration in the residual stream</title>
+<desc id="desc">Animated schematic. Harmless and harmful prompt activations form two clusters. The refusal direction r-hat is the difference of their means, made orthogonal to the harmless mean. Projecting r-hat out of the weights moves harmful activations onto the plane orthogonal to r-hat, while harmless activations barely move.</desc>
+<style>
+text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;font-size:14px;fill:#1f2328}
+.ink2{fill:#59636e}.muted{fill:#818b98}.small{font-size:12px}.b{font-weight:600}
+.end{text-anchor:end}.mid{text-anchor:middle}
+.halo{paint-order:stroke;stroke:#ffffff;stroke-width:4px;stroke-linejoin:round}
+.dot{transform:translate(var(--dx),var(--dy));animation:dot 14.0s infinite ease-in-out}
+@keyframes dot{0%{opacity:0;transform:translate(0,0)}7.1%{opacity:1}50%{transform:translate(0,0)}64.3%{transform:translate(var(--dx),var(--dy))}92.9%{opacity:1;transform:translate(var(--dx),var(--dy))}100%{opacity:0;transform:translate(var(--dx),var(--dy))}}
+.ghost{opacity:.22;animation:ghost 14.0s infinite}
+@keyframes ghost{0%{opacity:0}50%{opacity:0}54.3%{opacity:.22}92.9%{opacity:.22}100%{opacity:0}}
+.means{animation:means 14.0s infinite}
+@keyframes means{0%{opacity:0}10%{opacity:0}13.6%{opacity:1}92.9%{opacity:1}100%{opacity:0}}
+.diff{opacity:.35;transform-origin:241.5px 293px;animation:diff 14.0s infinite ease-in-out}
+@keyframes diff{0%{opacity:0;transform:scale(0)}14.3%{opacity:1;transform:scale(0)}21.4%{transform:scale(1)}32.9%{opacity:1}37.1%{opacity:.35}92.9%{opacity:.35;transform:scale(1)}100%{opacity:0;transform:scale(1)}}
+.difflabel{opacity:0;animation:difflabel 14.0s infinite}
+@keyframes difflabel{0%{opacity:0}18.6%{opacity:0}21.4%{opacity:1}31.4%{opacity:1}34.3%{opacity:0}}
+.r{transform-origin:241.5px 293px;animation:r 14.0s infinite ease-in-out}
+@keyframes r{0%{opacity:0;transform:rotate(41.6deg) scale(1.337)}30%{opacity:0;transform:rotate(41.6deg) scale(1.337)}32.9%{opacity:1;transform:rotate(41.6deg) scale(1.337)}42.1%{transform:rotate(0deg) scale(1)}92.9%{opacity:1;transform:rotate(0deg) scale(1)}100%{opacity:0;transform:rotate(0deg) scale(1)}}
+.plane{animation:plane 14.0s infinite}
+@keyframes plane{0%{opacity:0}30%{opacity:0}32.9%{opacity:1}92.9%{opacity:1}100%{opacity:0}}
+.perp{animation:perp 14.0s infinite}
+@keyframes perp{0%{opacity:0}42.1%{opacity:0}45%{opacity:1}92.9%{opacity:1}100%{opacity:0}}
+.s1{animation:s1 14.0s infinite}
+@keyframes s1{0%{opacity:1}30%{opacity:1}32.1%{opacity:.3}97.9%{opacity:.3}100%{opacity:1}}
+.s2{animation:s2 14.0s infinite}
+@keyframes s2{0%{opacity:.3}27.9%{opacity:.3}30%{opacity:1}48.6%{opacity:1}50.7%{opacity:.3}100%{opacity:.3}}
+.s3{animation:s3 14.0s infinite}
+@keyframes s3{0%{opacity:.3}46.4%{opacity:.3}48.6%{opacity:1}92.9%{opacity:1}97.9%{opacity:.3}100%{opacity:.3}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+<rect x="0.5" y="0.5" width="879" height="399" rx="8" fill="#ffffff" stroke="#d1d9e0"/>
+<defs>
+<marker id="ah-axis" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1L9,5L0,9z" fill="#c8d1da"/></marker>
+<marker id="ah-ink2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1L9,5L0,9z" fill="#59636e"/></marker>
+<marker id="ah-ink" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,1L9,5L0,9z" fill="#1f2328"/></marker>
+</defs>
+<text x="46" y="34" class="small muted">Schematic: a 2-D slice of the 3,840-dimensional residual stream</text>
+<path d="M46,368H422.2" stroke="#c8d1da" stroke-width="1.5" fill="none" marker-end="url(#ah-axis)"/>
+<path d="M46,368V71" stroke="#c8d1da" stroke-width="1.5" fill="none" marker-end="url(#ah-axis)"/>
+<text x="38" y="372" class="small muted end">0</text>
+<g class="plane">
+<path d="M46,368L415.6,226.2" stroke="#818b98" stroke-width="1.5" stroke-dasharray="5 5" fill="none"/>
+<text x="415.6" y="216.2" class="small ink2 end">plane ⊥ r̂</text>
+</g>
+<g class="ghosts">
+<circle class="ghost" cx="237.6" cy="282" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5"/>
+<circle class="ghost" cx="238.3" cy="298.3" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5"/>
+<circle class="ghost" cx="220.7" cy="296.3" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5"/>
+<circle class="ghost" cx="271.9" cy="283.7" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5"/>
+<circle class="ghost" cx="270" cy="287.2" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5"/>
+<circle class="ghost" cx="253.9" cy="288.4" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5"/>
+<circle class="ghost" cx="202.2" cy="275.2" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5"/>
+<circle class="ghost" cx="256.7" cy="282.2" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5"/>
+<circle class="ghost" cx="201.6" cy="326.6" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5"/>
+<circle class="ghost" cx="221.7" cy="301.4" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5"/>
+<circle class="ghost" cx="251.7" cy="293" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5"/>
+<circle class="ghost" cx="257.1" cy="304.8" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5"/>
+<circle class="ghost" cx="251.7" cy="284.3" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5"/>
+<circle class="ghost" cx="227.4" cy="258.1" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5"/>
+<circle class="ghost" cx="258" cy="268.4" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5"/>
+<circle class="ghost" cx="228.4" cy="306.7" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5"/>
+<circle class="ghost" cx="235.4" cy="294.2" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5"/>
+<circle class="ghost" cx="259.9" cy="287.2" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5"/>
+<circle class="ghost" cx="232.8" cy="311" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5"/>
+<circle class="ghost" cx="230.9" cy="267.9" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5"/>
+<circle class="ghost" cx="223.7" cy="287.3" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5"/>
+<circle class="ghost" cx="254.7" cy="321.6" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5"/>
+<circle class="ghost" cx="245.2" cy="266.2" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5"/>
+<circle class="ghost" cx="193.5" cy="298.5" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5"/>
+<circle class="ghost" cx="241.3" cy="308.3" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5"/>
+<circle class="ghost" cx="256.5" cy="293.3" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5"/>
+<circle class="ghost" cx="207.3" cy="275.7" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5"/>
+<circle class="ghost" cx="260.8" cy="273.4" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5"/>
+<circle class="ghost" cx="280.1" cy="284.9" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5"/>
+<circle class="ghost" cx="247" cy="317.8" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5"/>
+<circle class="ghost" cx="259.4" cy="304.2" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5"/>
+<circle class="ghost" cx="232.6" cy="317.1" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5"/>
+<circle class="ghost" cx="219.7" cy="302.6" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5"/>
+<circle class="ghost" cx="276.3" cy="332.3" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5"/>
+<circle class="ghost" cx="207.4" cy="287.4" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5"/>
+<circle class="ghost" cx="280.2" cy="280.6" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5"/>
+<circle class="ghost" cx="240" cy="206.7" r="4.5" fill="#eb6834" stroke="#ffffff" stroke-width="1.5"/>
+<circle class="ghost" cx="299.6" cy="169" r="4.5" fill="#eb6834" stroke="#ffffff" stroke-width="1.5"/>
+<circle class="ghost" cx="260.6" cy="132.9" r="4.5" fill="#eb6834" stroke="#ffffff" stroke-width="1.5"/>
+<circle class="ghost" cx="319.3" cy="150.2" r="4.5" fill="#eb6834" stroke="#ffffff" stroke-width="1.5"/>
+<circle class="ghost" cx="296.7" cy="144.3" r="4.5" fill="#eb6834" stroke="#ffffff" stroke-width="1.5"/>
+<circle class="ghost" cx="332.3" cy="140.4" r="4.5" fill="#eb6834" stroke="#ffffff" stroke-width="1.5"/>
+<circle class="ghost" cx="303.9" cy="141.9" r="4.5" fill="#eb6834" stroke="#ffffff" stroke-width="1.5"/>
+<circle class="ghost" cx="248.8" cy="126.4" r="4.5" fill="#eb6834" stroke="#ffffff" stroke-width="1.5"/>
+<circle class="ghost" cx="315.4" cy="142.3" r="4.5" fill="#eb6834" stroke="#ffffff" stroke-width="1.5"/>
+<circle class="ghost" cx="238.1" cy="166.9" r="4.5" fill="#eb6834" stroke="#ffffff" stroke-width="1.5"/>
+<circle class="ghost" cx="312.4" cy="191.8" r="4.5" fill="#eb6834" stroke="#ffffff" stroke-width="1.5"/>
+<circle class="ghost" cx="285.3" cy="132" r="4.5" fill="#eb6834" stroke="#ffffff" stroke-width="1.5"/>
+<circle class="ghost" cx="255.6" cy="119.5" r="4.5" fill="#eb6834" stroke="#ffffff" stroke-width="1.5"/>
+<circle class="ghost" cx="304.8" cy="156.7" r="4.5" fill="#eb6834" stroke="#ffffff" stroke-width="1.5"/>
+<circle class="ghost" cx="298.8" cy="139.8" r="4.5" fill="#eb6834" stroke="#ffffff" stroke-width="1.5"/>
+<circle class="ghost" cx="293.4" cy="129.3" r="4.5" fill="#eb6834" stroke="#ffffff" stroke-width="1.5"/>
+<circle class="ghost" cx="272.7" cy="162.3" r="4.5" fill="#eb6834" stroke="#ffffff" stroke-width="1.5"/>
+<circle class="ghost" cx="317.7" cy="152.9" r="4.5" fill="#eb6834" stroke="#ffffff" stroke-width="1.5"/>
+<circle class="ghost" cx="267" cy="133.5" r="4.5" fill="#eb6834" stroke="#ffffff" stroke-width="1.5"/>
+<circle class="ghost" cx="328.9" cy="162.9" r="4.5" fill="#eb6834" stroke="#ffffff" stroke-width="1.5"/>
+<circle class="ghost" cx="253.8" cy="156.3" r="4.5" fill="#eb6834" stroke="#ffffff" stroke-width="1.5"/>
+<circle class="ghost" cx="286.3" cy="159.8" r="4.5" fill="#eb6834" stroke="#ffffff" stroke-width="1.5"/>
+<circle class="ghost" cx="327.3" cy="175.2" r="4.5" fill="#eb6834" stroke="#ffffff" stroke-width="1.5"/>
+<circle class="ghost" cx="323.5" cy="180.3" r="4.5" fill="#eb6834" stroke="#ffffff" stroke-width="1.5"/>
+<circle class="ghost" cx="269.4" cy="140.2" r="4.5" fill="#eb6834" stroke="#ffffff" stroke-width="1.5"/>
+<circle class="ghost" cx="320" cy="135.4" r="4.5" fill="#eb6834" stroke="#ffffff" stroke-width="1.5"/>
+<circle class="ghost" cx="299.3" cy="150.5" r="4.5" fill="#eb6834" stroke="#ffffff" stroke-width="1.5"/>
+<circle class="ghost" cx="294.2" cy="141.4" r="4.5" fill="#eb6834" stroke="#ffffff" stroke-width="1.5"/>
+<circle class="ghost" cx="285.5" cy="147.6" r="4.5" fill="#eb6834" stroke="#ffffff" stroke-width="1.5"/>
+<circle class="ghost" cx="305.3" cy="153.5" r="4.5" fill="#eb6834" stroke="#ffffff" stroke-width="1.5"/>
+<circle class="ghost" cx="310.4" cy="141.5" r="4.5" fill="#eb6834" stroke="#ffffff" stroke-width="1.5"/>
+<circle class="ghost" cx="343.3" cy="146.6" r="4.5" fill="#eb6834" stroke="#ffffff" stroke-width="1.5"/>
+<circle class="ghost" cx="278.9" cy="161.4" r="4.5" fill="#eb6834" stroke="#ffffff" stroke-width="1.5"/>
+<circle class="ghost" cx="289.9" cy="134" r="4.5" fill="#eb6834" stroke="#ffffff" stroke-width="1.5"/>
+<circle class="ghost" cx="281.3" cy="145.4" r="4.5" fill="#eb6834" stroke="#ffffff" stroke-width="1.5"/>
+<circle class="ghost" cx="338.7" cy="207.7" r="4.5" fill="#eb6834" stroke="#ffffff" stroke-width="1.5"/>
+</g>
+<g class="dots">
+<circle class="dot" cx="237.6" cy="282" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="--dx:4.2px;--dy:10.9px"/>
+<circle class="dot" cx="238.3" cy="298.3" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="--dx:-1.4px;--dy:-3.6px"/>
+<circle class="dot" cx="220.7" cy="296.3" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="--dx:1.6px;--dy:4.1px"/>
+<circle class="dot" cx="271.9" cy="283.7" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="--dx:-0.8px;--dy:-2.0px"/>
+<circle class="dot" cx="270" cy="287.2" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="--dx:-1.7px;--dy:-4.4px"/>
+<circle class="dot" cx="253.9" cy="288.4" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="--dx:-0.1px;--dy:-0.2px"/>
+<circle class="dot" cx="202.2" cy="275.2" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="--dx:11.0px;--dy:28.7px"/>
+<circle class="dot" cx="256.7" cy="282.2" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="--dx:1.7px;--dy:4.3px"/>
+<circle class="dot" cx="201.6" cy="326.6" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="--dx:-6.1px;--dy:-16.0px"/>
+<circle class="dot" cx="221.7" cy="301.4" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="--dx:-0.3px;--dy:-0.7px"/>
+<circle class="dot" cx="251.7" cy="293" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="--dx:-1.3px;--dy:-3.4px"/>
+<circle class="dot" cx="257.1" cy="304.8" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="--dx:-5.9px;--dy:-15.5px"/>
+<circle class="dot" cx="251.7" cy="284.3" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="--dx:1.6px;--dy:4.2px"/>
+<circle class="dot" cx="227.4" cy="258.1" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="--dx:13.5px;--dy:35.1px"/>
+<circle class="dot" cx="258" cy="268.4" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="--dx:6.1px;--dy:15.9px"/>
+<circle class="dot" cx="228.4" cy="306.7" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="--dx:-2.9px;--dy:-7.6px"/>
+<circle class="dot" cx="235.4" cy="294.2" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="--dx:0.4px;--dy:1.0px"/>
+<circle class="dot" cx="259.9" cy="287.2" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="--dx:-0.4px;--dy:-1.1px"/>
+<circle class="dot" cx="232.8" cy="311" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="--dx:-4.9px;--dy:-12.8px"/>
+<circle class="dot" cx="230.9" cy="267.9" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="--dx:9.7px;--dy:25.4px"/>
+<circle class="dot" cx="223.7" cy="287.3" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="--dx:4.2px;--dy:11.0px"/>
+<circle class="dot" cx="254.7" cy="321.6" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="--dx:-11.3px;--dy:-29.3px"/>
+<circle class="dot" cx="245.2" cy="266.2" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="--dx:8.5px;--dy:22.1px"/>
+<circle class="dot" cx="193.5" cy="298.5" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="--dx:4.3px;--dy:11.3px"/>
+<circle class="dot" cx="241.3" cy="308.3" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="--dx:-5.1px;--dy:-13.3px"/>
+<circle class="dot" cx="256.5" cy="293.3" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="--dx:-2.0px;--dy:-5.3px"/>
+<circle class="dot" cx="207.3" cy="275.7" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="--dx:10.2px;--dy:26.5px"/>
+<circle class="dot" cx="260.8" cy="273.4" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="--dx:4.1px;--dy:10.7px"/>
+<circle class="dot" cx="280.1" cy="284.9" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="--dx:-2.3px;--dy:-5.9px"/>
+<circle class="dot" cx="247" cy="317.8" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="--dx:-9.0px;--dy:-23.5px"/>
+<circle class="dot" cx="259.4" cy="304.2" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="--dx:-6.0px;--dy:-15.8px"/>
+<circle class="dot" cx="232.6" cy="317.1" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="--dx:-6.9px;--dy:-18.1px"/>
+<circle class="dot" cx="219.7" cy="302.6" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="--dx:-0.4px;--dy:-1.1px"/>
+<circle class="dot" cx="276.3" cy="332.3" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="--dx:-17.6px;--dy:-45.9px"/>
+<circle class="dot" cx="207.4" cy="287.4" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="--dx:6.3px;--dy:16.3px"/>
+<circle class="dot" cx="280.2" cy="280.6" r="4.5" fill="#2a78d6" stroke="#ffffff" stroke-width="1.5" style="--dx:-0.8px;--dy:-2.2px"/>
+<circle class="dot" cx="240" cy="206.7" r="4.5" fill="#eb6834" stroke="#ffffff" stroke-width="1.5" style="--dx:29.1px;--dy:75.7px"/>
+<circle class="dot" cx="299.6" cy="169" r="4.5" fill="#eb6834" stroke="#ffffff" stroke-width="1.5" style="--dx:34.0px;--dy:88.6px"/>
+<circle class="dot" cx="260.6" cy="132.9" r="4.5" fill="#eb6834" stroke="#ffffff" stroke-width="1.5" style="--dx:51.1px;--dy:133.2px"/>
+<circle class="dot" cx="319.3" cy="150.2" r="4.5" fill="#eb6834" stroke="#ffffff" stroke-width="1.5" style="--dx:37.8px;--dy:98.5px"/>
+<circle class="dot" cx="296.7" cy="144.3" r="4.5" fill="#eb6834" stroke="#ffffff" stroke-width="1.5" style="--dx:42.6px;--dy:111.2px"/>
+<circle class="dot" cx="332.3" cy="140.4" r="4.5" fill="#eb6834" stroke="#ffffff" stroke-width="1.5" style="--dx:39.4px;--dy:102.7px"/>
+<circle class="dot" cx="303.9" cy="141.9" r="4.5" fill="#eb6834" stroke="#ffffff" stroke-width="1.5" style="--dx:42.5px;--dy:110.8px"/>
+<circle class="dot" cx="248.8" cy="126.4" r="4.5" fill="#eb6834" stroke="#ffffff" stroke-width="1.5" style="--dx:54.8px;--dy:142.8px"/>
+<circle class="dot" cx="315.4" cy="142.3" r="4.5" fill="#eb6834" stroke="#ffffff" stroke-width="1.5" style="--dx:40.9px;--dy:106.6px"/>
+<circle class="dot" cx="238.1" cy="166.9" r="4.5" fill="#eb6834" stroke="#ffffff" stroke-width="1.5" style="--dx:42.6px;--dy:111.1px"/>
+<circle class="dot" cx="312.4" cy="191.8" r="4.5" fill="#eb6834" stroke="#ffffff" stroke-width="1.5" style="--dx:24.8px;--dy:64.5px"/>
+<circle class="dot" cx="285.3" cy="132" r="4.5" fill="#eb6834" stroke="#ffffff" stroke-width="1.5" style="--dx:48.2px;--dy:125.7px"/>
+<circle class="dot" cx="255.6" cy="119.5" r="4.5" fill="#eb6834" stroke="#ffffff" stroke-width="1.5" style="--dx:56.2px;--dy:146.5px"/>
+<circle class="dot" cx="304.8" cy="156.7" r="4.5" fill="#eb6834" stroke="#ffffff" stroke-width="1.5" style="--dx:37.5px;--dy:97.7px"/>
+<circle class="dot" cx="298.8" cy="139.8" r="4.5" fill="#eb6834" stroke="#ffffff" stroke-width="1.5" style="--dx:43.9px;--dy:114.4px"/>
+<circle class="dot" cx="293.4" cy="129.3" r="4.5" fill="#eb6834" stroke="#ffffff" stroke-width="1.5" style="--dx:48.1px;--dy:125.4px"/>
+<circle class="dot" cx="272.7" cy="162.3" r="4.5" fill="#eb6834" stroke="#ffffff" stroke-width="1.5" style="--dx:39.7px;--dy:103.5px"/>
+<circle class="dot" cx="317.7" cy="152.9" r="4.5" fill="#eb6834" stroke="#ffffff" stroke-width="1.5" style="--dx:37.1px;--dy:96.6px"/>
+<circle class="dot" cx="267" cy="133.5" r="4.5" fill="#eb6834" stroke="#ffffff" stroke-width="1.5" style="--dx:50.1px;--dy:130.5px"/>
+<circle class="dot" cx="328.9" cy="162.9" r="4.5" fill="#eb6834" stroke="#ffffff" stroke-width="1.5" style="--dx:32.3px;--dy:84.2px"/>
+<circle class="dot" cx="253.8" cy="156.3" r="4.5" fill="#eb6834" stroke="#ffffff" stroke-width="1.5" style="--dx:44.1px;--dy:115.0px"/>
+<circle class="dot" cx="286.3" cy="159.8" r="4.5" fill="#eb6834" stroke="#ffffff" stroke-width="1.5" style="--dx:38.8px;--dy:101.2px"/>
+<circle class="dot" cx="327.3" cy="175.2" r="4.5" fill="#eb6834" stroke="#ffffff" stroke-width="1.5" style="--dx:28.4px;--dy:74.0px"/>
+<circle class="dot" cx="323.5" cy="180.3" r="4.5" fill="#eb6834" stroke="#ffffff" stroke-width="1.5" style="--dx:27.2px;--dy:70.8px"/>
+<circle class="dot" cx="269.4" cy="140.2" r="4.5" fill="#eb6834" stroke="#ffffff" stroke-width="1.5" style="--dx:47.5px;--dy:123.9px"/>
+<circle class="dot" cx="320" cy="135.4" r="4.5" fill="#eb6834" stroke="#ffffff" stroke-width="1.5" style="--dx:42.6px;--dy:111.2px"/>
+<circle class="dot" cx="299.3" cy="150.5" r="4.5" fill="#eb6834" stroke="#ffffff" stroke-width="1.5" style="--dx:40.2px;--dy:104.9px"/>
+<circle class="dot" cx="294.2" cy="141.4" r="4.5" fill="#eb6834" stroke="#ffffff" stroke-width="1.5" style="--dx:43.9px;--dy:114.6px"/>
+<circle class="dot" cx="285.5" cy="147.6" r="4.5" fill="#eb6834" stroke="#ffffff" stroke-width="1.5" style="--dx:43.0px;--dy:112.0px"/>
+<circle class="dot" cx="305.3" cy="153.5" r="4.5" fill="#eb6834" stroke="#ffffff" stroke-width="1.5" style="--dx:38.5px;--dy:100.3px"/>
+<circle class="dot" cx="310.4" cy="141.5" r="4.5" fill="#eb6834" stroke="#ffffff" stroke-width="1.5" style="--dx:41.8px;--dy:109.0px"/>
+<circle class="dot" cx="343.3" cy="146.6" r="4.5" fill="#eb6834" stroke="#ffffff" stroke-width="1.5" style="--dx:35.9px;--dy:93.6px"/>
+<circle class="dot" cx="278.9" cy="161.4" r="4.5" fill="#eb6834" stroke="#ffffff" stroke-width="1.5" style="--dx:39.2px;--dy:102.2px"/>
+<circle class="dot" cx="289.9" cy="134" r="4.5" fill="#eb6834" stroke="#ffffff" stroke-width="1.5" style="--dx:47.0px;--dy:122.5px"/>
+<circle class="dot" cx="281.3" cy="145.4" r="4.5" fill="#eb6834" stroke="#ffffff" stroke-width="1.5" style="--dx:44.3px;--dy:115.4px"/>
+<circle class="dot" cx="338.7" cy="207.7" r="4.5" fill="#eb6834" stroke="#ffffff" stroke-width="1.5" style="--dx:16.1px;--dy:41.9px"/>
+</g>
+<path class="diff" d="M241.5,293L291.2,160.6" stroke="#59636e" stroke-width="1.75" fill="none" marker-end="url(#ah-ink2)"/>
+<text class="difflabel small ink2 end halo" x="255.9" y="222.6">μ harmful − μ harmless</text>
+<g class="r"><path d="M241.5,293L201.2,187.9" stroke="#1f2328" stroke-width="2.5" fill="none" marker-end="url(#ah-ink)"/></g>
+<text x="191.2" y="191.9" class="perp b end halo" style="font-size:16px">r̂</text>
+<path class="perp" d="M252,289L247.9,278.5L237.5,282.5" stroke="#1f2328" stroke-width="1.25" fill="none"/>
+<g class="means">
+<circle cx="241.5" cy="293" r="7" fill="#2a78d6" stroke="#1f2328" stroke-width="2"/>
+<circle cx="294.4" cy="152.2" r="7" fill="#eb6834" stroke="#1f2328" stroke-width="2"/>
+<text x="254.5" y="311" class="small b halo">μ harmless</text>
+<text x="307.4" y="143.2" class="small b halo">μ harmful</text>
+</g>
+<g class="s1">
+<circle cx="486" cy="77" r="11" fill="none" stroke="#1f2328" stroke-width="1.5"/>
+<text x="486" y="82" class="b mid small">1</text>
+<text x="507" y="82" class="b" style="font-size:15px">Find the refusal direction</text>
+<text x="507" y="106" class="ink2">Average the residual stream over 400 harmful</text>
+<text x="507" y="126" class="ink2">and 400 harmless prompts, layer by layer. The</text>
+<text x="507" y="146" class="ink2">difference of the two means points at refusal.</text>
+</g>
+<g class="s2">
+<circle cx="486" cy="181" r="11" fill="none" stroke="#1f2328" stroke-width="1.5"/>
+<text x="486" y="186" class="b mid small">2</text>
+<text x="507" y="186" class="b" style="font-size:15px">Spare the harmless direction</text>
+<text x="507" y="210" class="ink2">Drop its component along the harmless mean</text>
+<text x="507" y="230" class="ink2">(r̂ ⊥ μ harmless), so ordinary activations</text>
+<text x="507" y="250" class="ink2">are left where they are.</text>
+</g>
+<g class="s3">
+<circle cx="486" cy="285" r="11" fill="none" stroke="#1f2328" stroke-width="1.5"/>
+<text x="486" y="290" class="b mid small">3</text>
+<text x="507" y="290" class="b" style="font-size:15px">Project it out of the weights</text>
+<text x="507" y="314" class="ink2">W ← W − λ r̂ r̂ᵀ W for each attn.o_proj and</text>
+<text x="507" y="334" class="ink2">mlp.down_proj. Those layers stop writing along</text>
+<text x="507" y="354" class="ink2">r̂, so harmful activations lose that component.</text>
+</g>
+</svg>
