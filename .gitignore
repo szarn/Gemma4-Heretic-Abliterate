@@ -1,7 +1,6 @@
 # Environments and third-party checkouts (reinstall from requirements*.txt / README)
 .venv/
 .venv-gguf/
-.venv-figures/
 tools/
 __pycache__/
 .DS_Store
